@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hue: 194;
+    --text-color:hsl(var(--hue)240, 6, 21, 100%);
+
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+body {
+    color: var(--text-color);
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+
+#app {
+    display: grid;
+    justify-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    display: grid;
+}
+
+#timer {
+    font-size: 11.6rem;
+    
+    font-family: sans-serif;
+
+}
+
+#controls {
+    margin-top: 2.6rem;
+    margin-right: 27.0rem;
+    padding: 1.2rem;
+    gap: 1.6rem;
+    background-color: white;
+}
+
+button1 {
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+    font-size: 6.0rem;
+}
+
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    appearance: none;
+}
+
+button2 {
+    background-color: rgb(183, 182, 182);
+    border: 0;
+    border-radius: 8px;
+    justify-content: space-around;
+
+    cursor: pointer;
+    font-size: 6.0rem;
+}
+
+#sounds1 {
+    gap: 1.6rem;
+    margin-left: 2.6rem;
+    
+
+    
+    align-items: center;
+}
+
+#sounds2 {
+    gap: 1.6rem;
+    
+    
+    
+    
+    align-items: center;
+}
